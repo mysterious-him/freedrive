@@ -1,0 +1,6 @@
+name: FreeDrive
+main: freedrive.FreeDriveMain
+version: "1.0.0"
+author: myster
+api: ["1.0.0"]
+description: FreeDrive plugin - spawn a rideable horse anywhere
