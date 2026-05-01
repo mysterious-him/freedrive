@@ -5,7 +5,6 @@
 command: drive
 
 # Messages
-touch-stairs-popup: "双击可骑马经过台阶"
 command-enabled: "骑马功能已启用"
 command-disabled: "骑马功能已禁用"
 
@@ -19,6 +18,9 @@ horse-speed: 0.25
 # Step height (blocks the horse can climb over)
 # 0.5 = half slab, 1.0 = full block, 1.5 = slab+block, 2.0 = two blocks
 horse-jump-height: 0.5
+
+# Horse visibility (true = invisible, false = visible)
+horse-invisible: false
 
 # Disabled players list (managed by plugin, do not edit manually)
 disabled: []

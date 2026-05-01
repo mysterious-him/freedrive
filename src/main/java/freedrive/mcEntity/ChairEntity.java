@@ -12,6 +12,7 @@ import java.util.List;
 
 import static freedrive.config.MyConfig.horseSpeed;
 import static freedrive.config.MyConfig.horseJumpHeight;
+import static freedrive.config.MyConfig.horseInvisible;
 
 /**
  * 基于马实体的载具。
@@ -28,6 +29,9 @@ public class ChairEntity extends EntityHorseBase {
 
     public ChairEntity(FullChunk chunk, CompoundTag nbt) {
         super(chunk, nbt);
+        if (horseInvisible) {
+            this.setDataFlag(Entity.DATA_FLAGS, Entity.DATA_FLAG_INVISIBLE, true, false);
+        }
     }
 
     /**

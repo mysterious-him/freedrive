@@ -2,6 +2,10 @@ package freedrive.event;
 
 import cn.nukkit.event.Listener;
 
+import java.util.List;
+
+import static freedrive.FreeDriveMain.ec;
+
 public class Listeners implements Listener {
-    // 双击楼梯功能已移除，仅通过 /drive 命令使用
+    public static final List<String> disabled = ec.get("disabled");
 }

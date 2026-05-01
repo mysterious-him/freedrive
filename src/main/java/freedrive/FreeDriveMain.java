@@ -38,7 +38,7 @@ public class FreeDriveMain extends PluginBase {
     @Override
     public void onEnable() {
         checkServer();
-        Entity.registerEntity("Chair", ChairEntity.class);
+        Entity.registerEntity("DriveHorse", ChairEntity.class);
         //注册监听器
         nkServer.getPluginManager().registerEvents(new Listeners(), this);
         //注册命令

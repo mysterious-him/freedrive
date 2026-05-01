@@ -32,7 +32,7 @@ public class MyCommand extends Command {
                 if (args.length == 0) {
                     Position position = player.getPosition();
                     position.setY(position.getY() - 0.5);
-                    Entity horse = Entity.createEntity("Chair", position);
+                    Entity horse = Entity.createEntity("DriveHorse", position);
                     player.setPosition(horse);
                     horse.mountEntity(player);
                     horse.spawnToAll();
