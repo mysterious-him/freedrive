@@ -10,6 +10,9 @@ import cn.nukkit.nbt.tag.CompoundTag;
 import java.util.ArrayList;
 import java.util.List;
 
+import static freedrive.config.MyConfig.horseSpeed;
+import static freedrive.config.MyConfig.horseJumpHeight;
+
 /**
  * 基于马实体的载具。
  * <p>
@@ -44,19 +47,21 @@ public class ChairEntity extends EntityHorseBase {
     }
 
     /**
-     * 固定速度：5 blocks/s (0.25 blocks/tick)
+     * 马的移动速度，默认 0.25（5 blocks/s）。
+     * 可在 config.yml 中修改 horse-speed 参数。
      */
     @Override
     public double getSpeed() {
-        return 0.25f;
+        return horseSpeed;
     }
 
     /**
-     * 跨步高度限制为 0.5 格（半砖），只能走上半砖台阶。
+     * 马能跨越的高度，默认 0.5 格（半砖）。
+     * 可在 config.yml 中修改 horse-jump-height 参数。
      */
     @Override
     protected double getStepHeight() {
-        return 0.5;
+        return horseJumpHeight;
     }
 
     /**
